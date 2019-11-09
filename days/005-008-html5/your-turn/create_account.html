@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+</head>
+<body>
+    <div style = "background: #EEEEEE ;margin:100px auto; width:40%; padding-top: 50px; padding:20px">
+        <! Insert a search engine here>
+        <div style="margin-bottom: 20px">
+            <img src="google.jpg" alt = "google image" height="50px">
+         </div>
+        <form action="" method = "post" >
+            <div style="font-size: 20px; margin-bottom:20px; margin-top:20px;"><strong>Create your Google Account</strong></div>
+            <br>
+            <input type = "text" placeholder="first name" name="firstname" pattern="\w+" required><!input type text includes both numbers and characters>
+            <input type = "text" placeholder="last name" name="lastname" pattern="\w+" required>
+            <br><br>
+            <!Add more conditions to the password below>
+            <input type = "text" minlength="6" placeholder="username" name="username" required>@gmail.com
+          <br><br>
+            <input type = "password" placeholder="password" name="pwd1" pattern="(?=.*\d)(?=.*[a-z](?=.*[A-Z]).{6,}" onchange="form.pw2.pattern = RegExp.escape(this.value);" required>
+            <br><br>
+            <input type = "password" placeholder="re-enter password" name="pwd2" required>
+            <br><br>
+            <button style="margin-top: 10px">SUBMIT</button>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
